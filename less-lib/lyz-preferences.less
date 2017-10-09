@@ -1,0 +1,184 @@
+@g: 46.875rem;
+
+//size
+.fs(@v){
+    font-size: @v / @g;
+}
+.w(@v){
+    width: @v / @g;
+}
+.h(@v){
+    height: @v / @g;
+}
+.l(@v){
+    left: @v / @g;
+}
+.t(@v){
+    top: @v / @g;
+}
+.r(@v){
+    right: @v / @g;
+}
+.b(@v){
+    bottom: @v / @g;
+}
+.wh(@v){
+    .h(@v);
+    .w(@v);
+}
+.w100(){
+    width: 100%;
+}
+.h100(){
+    height: 100%;
+}
+.wh100(){
+    .w100();
+    .h100();
+}
+.l50(){
+    left: 50%;
+}
+.t50(){
+    top: 50%;
+}
+.r50(){
+    right: 50%;
+}
+.b50(){
+    bottom: 50%;
+}
+.l100(){
+    left: 100%;
+}
+.t100(){
+    top: 100%;
+}
+.r100(){
+    right: 100%;
+}
+.b100(){
+    bottom: 100%;
+}
+
+.lh(@v){
+    line-height: @v / @g;
+}
+.bg-size(@v: 100% 100%){
+    background-size: @v;
+}
+//
+.border-box(){
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flexbox() {
+    // flex container
+    display: -webkit-box;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+}
+
+.flex(@values: 0 1 auto) {
+    // flex item
+    // flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto
+    -webkit-box-flex: @values;
+       -moz-box-flex: @values;
+    -webkit-flex: @values;
+        -ms-flex: @values;
+            flex: @values;
+}
+.block(){
+    display: block;
+}
+.inline(){
+    display: inline-block;
+}
+.none(){
+    display: none;
+}
+.pa(){
+    position: absolute;
+}
+.pa-center(){
+    .l50();
+    .t50();
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.pr(){
+    position: relative;
+}
+.pf(){
+    position: fixed;
+}
+//
+.text-center(){
+    text-align: center;
+}
+
+//color
+@c1: #111;
+@c2: #222;
+@c3: #333;
+@c4: #444;
+@c5: #555;
+@c6: #666;
+@c7: #777;
+@c8: #888;
+@c9: #999;
+@ca: #aaa;
+@cb: #bbb;
+@cc: #ccc;
+@cd: #ddd;
+@ce: #eee;
+@cf: #fff;
+.c333(){
+    color: @c3;
+}
+.c666(){
+    color: @c6;
+}
+.c999(){
+    color: @c9;
+}
+.cfff(){
+    color: #fff;
+}
+
+//
+.line1() {
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+.linex(@num) {
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-all;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @num;
+}
+
+
+//CSS3
+.translate(@x, @y: 0) {
+    -webkit-transform: translate(@x, @y);
+            transform: translate(@x, @y);
+}
+
+
+
+
+
+
+
+
+
+
+
+

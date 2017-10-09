@@ -1,0 +1,13 @@
+.detail {
+    position: absolute;
+    width: 1.7066666666666668rem;
+    height: 1.7066666666666668rem;
+    right: 1.024rem;
+    bottom: 1.024rem;
+    background: url('//h0.hucdn.com/open/201716/4aa834078b5c5578_80x80.png') no-repeat;
+    background-size: cover;
+    z-index: 10
+}
+.yeb-webp .detail {
+    background: url(//h0.hucdn.com/open/201716/4aa834078b5c5578_80x80.png!750.webp) no-repeat
+}
